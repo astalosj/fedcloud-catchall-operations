@@ -1,21 +1,40 @@
-endpoint: https://stratus.ncg.ingrid.pt:5000/v3
+---
 gocdb: NCG-INGRID-PT
+endpoint: https://stratus.ncg.ingrid.pt:5000/v3
 vos:
-- auth:
+- name: aquamonitor.c-scale.eu
+  auth:
+    project_id: 8258f24c93b14473ba58892f5f2748f4
+- name: cloud.egi.eu
+  auth:
+    project_id: 6b042927bcfa466cb9eb56d3ea679987
+- name: covid19.eosc-synergy.eu
+  auth:
     project_id: 05e52356addc44e18ef2bd14f2e2f67d
-  name: covid19.eosc-synergy.eu
-- auth:
+- name: eosc-synergy.eu
+  auth:
     project_id: ddf0c468c8af4e0bbb9808bfc0288381
-  name: eosc-synergy.eu
-- auth:
+- name: gltfca.c-scale.eu
+  auth:
+    project_id: ace9ecd40164498783fa18bc2dbc06ed
+- name: fedcloud.egi.eu
+  auth:
     project_id: bd5a81e1670b48f18af33b05512a9d77
-  name: fedcloud.egi.eu
-- auth:
+- name: lagoproject.net
+  auth:
+    project_id: 14e8f964db4c4a8ea286b0886ab51e7c
+- name: opencoast.eosc-hub.eu
+  auth:
     project_id: b0cea6bd85844b0693ceda70d9f94a09
-  name: opencoast.eosc-hub.eu
-- auth:
+- name: ops
+  auth:
+    project_id: f9b54a925f8a467bba107f577dae7479
+- name: training.egi.eu
+  auth:
     project_id: e51b8a89b30945adbf52a5d568912e4c
-  name: training.egi.eu
-- auth:
+- name: vo.access.egi.eu
+  auth:
+    project_id: bd5a81e1670b48f18af33b05512a9d77
+- name: worsica.vo.incd.pt
+  auth:
     project_id: a53ca78c534046e5b13f4537ae698411
-  name: worsica.vo.incd.pt

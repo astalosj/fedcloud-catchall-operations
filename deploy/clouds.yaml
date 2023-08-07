@@ -1,19 +1,21 @@
 ---
-backend_token: &bt "secret"
-deploy_token: &dt "secret"
+backend_token: &bt "backend_secret"
+deploy_token: &dt "deploy_secret"
 
 clouds:
   backend:
-    site: CESNET-MCC
+    site: NCG-INGRID-PT
+    vo: cloud.egi.eu
     auth_type: token
     auth:
-      auth_url: https://identity.cloud.muni.cz/v3
+      auth_url: https://stratus.ncg.ingrid.pt:5000/v3
       token: *bt
-      project_id: 10b972eed97940089b234f6257d7db72
+      project_id: 6b042927bcfa466cb9eb56d3ea679987
   deploy:
-    site: CESNET-MCC
+    site: NCG-INGRID-PT
+    vo: cloud.egi.eu
     auth_type: token
     auth:
-      auth_url: https://identity.cloud.muni.cz/v3
+      auth_url: https://stratus.ncg.ingrid.pt:5000/v3
       token: *dt
-      project_id: 10b972eed97940089b234f6257d7db72
+      project_id: 6b042927bcfa466cb9eb56d3ea679987

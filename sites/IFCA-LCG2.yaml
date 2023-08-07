@@ -1,63 +1,62 @@
-endpoint: https://api.cloud.ifca.es:5000/v3/
+---
 gocdb: IFCA-LCG2
+endpoint: https://api.cloud.ifca.es:5000/v3/
 vos:
-- auth:
-    project_id: 403847ab342247b89b0ba2ede2c82b39
-  name: acc-comp.egi.eu
-- auth:
-    project_id: d602bda767b4490a82b2f62f9347a0f5
-  name: biinsight.eosc-hub.eu
-- auth:
-    project_id: e14972ead3154810a5941e511afc208c
-  name: covid19.eosc-synergy.eu
-- auth:
+- name: cos4cloud-eosc.eu
+  auth:
+    project_id: c614975f1176494eaf6d6c389e1f3e2c
+- name: cryoem.instruct-eric.eu
+  auth:
     project_id: c7db08b907ef4f0fae73bdd6587bc79e
-  name: cryoem.instruct-eric.eu
-- auth:
-    project_id: 9170e65775964a3ba6b18d83a2ad1968
-  name: d4science.org
-- auth:
+- name: demo.fedcloud.egi.eu
+  auth:
     project_id: 2a7e2cd4b6dc4e609dd934964c1715c6
-  name: demo.fedcloud.egi.eu
-- auth:
+- name: dteam
+  auth:
     project_id: 5eb8959a799240a98f4f303f5fbd80be
-  name: dteam
-- auth:
-    project_id: 6b8f8974b27247adb4cc2990b81e6019
-  name: ec-meloa.eu
-- auth:
+#This is not an EGI VO
+#- name: ec-meloa.eu
+#  auth:
+#    project_id: 6b8f8974b27247adb4cc2990b81e6019
+- name: enmr.eu
+  auth:
     project_id: b6b1c395b7da4e8aa1d0895bd695b0ba
-  name: enmr.eu
-- auth:
-    project_id: 3b9754ad8c6046b4aec43ec21abe7d8c
-  name: eosc-synergy.eu
-- auth:
-    project_id: 352db003073549749351fad26cd55074
-  name: o3as.data.kit.edu
-- auth:
+- name: icecube
+  auth:
+    project_id: 36a6b6937b4d4d23a74842791d5c6e9a
+- name: opencoast.eosc-hub.eu
+  auth:
     project_id: 4ebc1727dbed465c8ef72617a9075b4f
-  name: opencoast.eosc-hub.eu
-- auth:
+- name: openrisknet.org
+  auth:
+    project_id: 6f17d8db2b07472dacf01c453753c3a8
+- name: ops
+  auth:
     project_id: a372c1e2fba040e58fd0cb524a3ccd34
-  name: ops
-- auth:
-    project_id: ccb3f2fe96a44c86b564a17dca9a326c
-  name: seadatanet-pilot.eosc-hub.eu
-- auth:
+- name: training.egi.eu
+  auth:
     project_id: f1d0308880134d04964097524eace710
-  name: training.egi.eu
-- auth:
+- name: vo.access.egi.eu
+  auth:
     project_id: 999f045cb1ff4684a15ebb338af69460
-  name: vo.access.egi.eu
-- auth:
+- name: vo.ai4eosc.eu
+  auth:
+    project_id: f44e296a9ea441548456d25fb5b467c9
+- name: vo.imagine-ai.eu
+  auth:
+    project_id: 2f9d982c4a654c38aad616f5a1f7146d
+- name: vo.lifewatch.eu
+  auth:
     project_id: 3c8d36c4136946238e82d995fd274d1c
-  name: vo.lifewatch.eu
-- auth:
-    project_id: 13c11c4073f4456fac7df84c4eb8f85b
-  name: vo.nextgeoss.eu
-- auth:
+- name: /vo.lifewatch.eu/openbiomap
+  auth:
     project_id: ac7bc26131d248ecb6add521e648c331
-  name: vo.openbiomap.lifewatch.eu
-- auth:
-    project_id: 7bb9c2694f9040c68cd72cb994f5ce89
-  name: worsica.eosc.eu
+- name: vo.obsea.es
+  auth:
+    project_id: 9ce2e985504d44d5af102ad3b537ffad
+- name: ispravision.vo.egi.eu
+  auth:
+    project_id: ed9a5bb0f5a5444ba2ad5cd97072a189
+- name: vo.digitbrain.eu
+  auth:
+    project_id: 3eff18b8a237407ea2ed56aa9cb5d07c

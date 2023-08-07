@@ -11,7 +11,7 @@ SLACK_WEBHOOK_URL="$4"
 
 ansible-galaxy install git+https://github.com/EGI-Federation/ansible-role-fedcloud-ops.git
 
-echo "cloud_info_image: \"egifedcloud/ops-cloud-info:sha-$SHORT_SHA\"" >> extra-vars.yaml
+echo "cloud_info_image: \"ghcr.io/egi-federation/fedcloud-cloud-info:sha-$SHORT_SHA\"" >> extra-vars.yaml
 
 # Configure!
 if ansible-playbook -i inventory.yaml  \
@@ -27,6 +27,10 @@ else
    color="#EA4F47"
    header="Failed deployment :boom:"
 fi
+
+# This is a temporary way to get the auto discovery working while we transition for all sites
+# copy the secrets to the /etc/egi/vos dir which is readable from the containers
+cp secrets.yaml /etc/egi/vos/secrets.yaml
 
 GITHUB_COMMIT_URL="https://api.github.com/repos/EGI-Federation/fedcloud-catchall-operations/commits/$COMMIT_SHA/pulls"
 
